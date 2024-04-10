@@ -1,0 +1,13 @@
+server:
+ port: 9090
+spring:
+ datasource:
+  url: jdbc:h2:file:/data/demo;
+  driverClassName: org.h2.Driver
+  usename: sa
+  password: pass
+ jpa:
+  database-platform: org.hibernate.dialect.H2Dialect
+  show-sql: true
+  hibernate:
+   ddl-auto: create-drop
